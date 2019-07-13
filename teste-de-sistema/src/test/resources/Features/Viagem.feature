@@ -11,6 +11,3 @@ E preencheu todos os campos obrigatorios
 Quando clicar em buscar
 Entao o melhor preco por cia sera exibido
 
-#Testandooo
-#
-#
