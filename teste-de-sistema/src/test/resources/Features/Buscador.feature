@@ -3,7 +3,7 @@
 @Buscador
 Funcionalidade: Buscar dados
 
-@ValidarBuscador
+
 Cenario: Dados Invalidos Buscar Pacotes
 
 Dado que o usuario no site do cvc

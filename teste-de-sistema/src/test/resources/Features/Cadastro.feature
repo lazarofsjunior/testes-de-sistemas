@@ -3,7 +3,7 @@
 @Cadastro
 Funcionalidade: Cadastro 
 
-@CadastrarComSucesso
+
 Cenario: Cadastrar cliente
 
 Dado que o usuario no site do cvc e clicar em login e minhas viagens

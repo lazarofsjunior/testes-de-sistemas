@@ -3,7 +3,7 @@
 @DefinirRotas
 Funcionalidade: Definir rotas
 
-@Viagem
+
 Cenario: Validar melhor preco
 
 Dado que o usuario esteja no site do CVC

@@ -1,9 +1,9 @@
 #language: pt
 
-@Formulario
+@FaleConosco
 Funcionalidade: Formulario
 
-@FaleConosco
+
 Cenario: Validar Formulario Fale Conosco
 
 Dado que o usuario esteja no formulario fale conosco

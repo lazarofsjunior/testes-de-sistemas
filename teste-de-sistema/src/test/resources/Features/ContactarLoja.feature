@@ -3,7 +3,7 @@
 @ContatoLoja
 Funcionalidade: Contato da loja
 
-@LojaProxima
+
 Cenario: Loja proxima de uma regiap
 
 Dado que o usuario no site do cvc e clicar em lojas

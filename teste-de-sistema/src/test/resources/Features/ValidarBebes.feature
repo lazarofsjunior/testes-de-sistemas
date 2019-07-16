@@ -1,9 +1,9 @@
 #language: pt
 
-@QuantidadeDeBebes
+@ValidacaoBebes
 Funcionalidade: Contador de passageiros
 
-@ValidacaoBebes
+
 Cenario: Validacao Bebes
 
 Dado que o usuario esteja no site do CVC
