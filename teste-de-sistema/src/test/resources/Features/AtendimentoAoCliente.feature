@@ -10,4 +10,3 @@ Quando clicar em pesquisar
 Entao serao exibidas as duvidas sobre criancas
 E ele clicara em cada pergunta e vera os textos exibidos com duvidas sanadas
 
-#teste
