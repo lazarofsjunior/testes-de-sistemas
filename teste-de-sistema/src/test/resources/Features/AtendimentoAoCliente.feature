@@ -1,11 +1,12 @@
 #language: pt
 
+@atendimentoAoCliente
+Funcionalidade: Duvidas sobre criancas
+
 @validarPerguntaCrianca
-Funcionalidade: Duvidas sobre crianças
-
+Cenario: Validar Pergunta Sobre Criancas
 Dado que o usuario esteja na pagina de central de atendimento
-E digitou "Criança" no campo de dúvidas
+E digitou "Crian�a" no campo de duvidas
 Quando clicar em pesquisar
-Entao serão exibidas as duvidas sobre crianças
-E ele clicará em cada pergunta e verá os textos exibidos com duvidas sanadas
-
+Entao serao exibidas as duvidas sobre crian�as
+E ele clicara em cada pergunta e vera os textos exibidos com duvidas sanadas

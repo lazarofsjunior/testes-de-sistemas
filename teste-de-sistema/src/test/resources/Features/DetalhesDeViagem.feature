@@ -1,10 +1,13 @@
 #language: pt
 
-@formulario
-Funcionalidade: Fale conosco
+@Formulario
+Funcionalidade: Formulario
+
+@FaleConosco
+Cenario: Validar Formulario Fale Conosco
 
 Dado que o usuario esteja no formulario fale conosco
 E preencheu todos os campos obrigatorios com dados invalidos
 Quando clicar em enviar mensagem
-Entao aparecera uma janela alertando o usuaqui que a mensagem nao foi enviada
+Entao aparecera uma janela alertando o usuario que a mensagem nao foi enviada
 
