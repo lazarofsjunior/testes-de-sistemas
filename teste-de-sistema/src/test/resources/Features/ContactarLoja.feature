@@ -3,8 +3,8 @@
 @ContatoLoja
 Funcionalidade: Contato da loja
 
-@DuvidasSobreCriancas
-Cenario: Duvidas sobre criancas
+@LojaProxima
+Cenario: Loja proxima de uma regiap
 
 Dado que o usuario no site do cvc e clicar em lojas
 E pesquisar pela loja mais proxima a sua residencia
