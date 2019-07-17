@@ -28,7 +28,8 @@ public class PassagensAereasPageObject {
 		driver.findElement(origem).sendKeys("Recife");
 
 		WebDriverWait wait = new WebDriverWait(driver, 10);
-		WebElement element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("*//div[1]/div/div/div[1]/div[2]/form/div[2]/label/div/div/div[2]/div/ul/li[1]/ul/li/b")));
+		WebElement element = wait.until(ExpectedConditions.elementToBeClickable(
+				By.xpath("*//div[1]/div/div/div[1]/div[2]/form/div[2]/label/div/div/div[2]/div/ul/li[1]/ul/li/b")));
 		element.click();
 
 	}
@@ -38,8 +39,6 @@ public class PassagensAereasPageObject {
 		driver.findElement(destino).click();
 
 		driver.findElement(destino).sendKeys("Rio De Janeiro");
-		
-		
 
 	}
 
