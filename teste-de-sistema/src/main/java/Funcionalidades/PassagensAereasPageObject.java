@@ -17,7 +17,6 @@ public class PassagensAereasPageObject {
 	// elements
 
 	private By origem = By.id("ember-power-select-typeahead-input-ember799");
-	private By selecionarOrigem = By.xpath("//*[@id=\"ember-power-select-options-ember793\"]/li[1]/ul/li[1]");
 	private By destino = By.id("ember-power-select-typeahead-input-ember832");
 
 	// actions
@@ -28,20 +27,19 @@ public class PassagensAereasPageObject {
 
 		driver.findElement(origem).sendKeys("Recife");
 
-		WebElement incluirrOrigem = driver.findElement(selecionarOrigem);
-
 		WebDriverWait wait = new WebDriverWait(driver, 10);
-		wait.until(ExpectedConditions.visibilityOf(incluirrOrigem));
-
-		incluirrOrigem.click();
+		WebElement element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("*//div[1]/div/div/div[1]/div[2]/form/div[2]/label/div/div/div[2]/div/ul/li[1]/ul/li/b")));
+		element.click();
 
 	}
-	
+
 	public void inserirDestino() {
 
 		driver.findElement(destino).click();
 
 		driver.findElement(destino).sendKeys("Rio De Janeiro");
+		
+		
 
 	}
 
