@@ -7,7 +7,7 @@ public class Viagem {
 
 	public static void main(String[] args) {
 
-		System.setProperty("webdriver.chrome.driver", "C:\\chromedriver\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "C:\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
 
@@ -17,7 +17,8 @@ public class Viagem {
 
 		mainPage.acessPage();
 		headerPage.acessarPasssagemAereas();
-		passagens.inserirOrigem();
+		//passagens.inserirOrigem(null);
+		//passagens.inserirDestino(null);
 
 		// driver.quit();
 
