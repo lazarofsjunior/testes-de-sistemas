@@ -17,6 +17,7 @@ public class Viagem {
 
 		mainPage.acessPage();
 		headerPage.acessarPasssagemAereas();
+		passagens.acionarBuscar();
 		//passagens.inserirOrigem(null);
 		//passagens.inserirDestino(null);
 

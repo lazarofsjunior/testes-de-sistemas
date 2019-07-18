@@ -1,6 +1,6 @@
 #language: pt
 
-Funcionalidade: Definir rotas
+Funcionalidade: Melhor preco por companhia
 
 @Viagem
 Cenario: Validar melhor preco

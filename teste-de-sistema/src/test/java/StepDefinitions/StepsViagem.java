@@ -1,11 +1,15 @@
 package StepDefinitions;
 
+import static org.junit.Assert.assertEquals;
+
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import Funcionalidades.HeaderPageObject;
 import Funcionalidades.MainPageObject;
 import Funcionalidades.PassagensAereasPageObject;
+import cucumber.api.java.After;
 import cucumber.api.java.Before;
 import cucumber.api.java.pt.Dado;
 import cucumber.api.java.pt.Entao;
@@ -58,14 +62,20 @@ public class StepsViagem {
 
 	@Quando("clicar em buscar")
 	public void clicar_em_buscar() {
-		// Write code here that turns the phrase above into concrete actions
-		throw new cucumber.api.PendingException();
+		passagem.acionarBuscar();
 	}
 
 	@Entao("o melhor preco por cia sera exibido")
 	public void o_melhor_preco_por_cia_sera_exibido() {
-		// Write code here that turns the phrase above into concrete actions
-		throw new cucumber.api.PendingException();
+		
+		String textoElement = driver.findElement(By.cssSelector("#results > div.air-results-matrix > ul > li > a")).getText();
+        assertEquals("Titulo incorreto", "Melhor preço por companhia", textoElement);
+	}
+	
+	@After
+	public void afterScenario() {
+
+		this.driver.quit();
 	}
 
 }

@@ -18,8 +18,11 @@ public class PassagensAereasPageObject {
 
 	private By origem = By.id("ember-power-select-typeahead-input-ember799");
 	private By destino = By.xpath("*//div[1]/div/div/div[1]/div[2]/form/div[3]/label/div/div/div/div/input");
-	private By ida = By.xpath("//*[@id=\"ember-application\"]/div/main/section/div[1]/div/div/div[1]/div[2]/form/div[4]/div/input");
-
+	private By ida = By.xpath("*//div[1]/div/div/div[1]/div[2]/form/div[4]/div/input");
+	private By buscar = By.xpath("*//div[1]/div/div/div[1]/div[2]/form/div[8]/input");
+	private By resultado = By.cssSelector("#results > div.air-results-matrix > ul > li > a");
+	
+	
 	// actions
 
 	public void inserirOrigem(String string) {
@@ -51,6 +54,12 @@ public class PassagensAereasPageObject {
 	public void ida() {
 		
 		driver.findElement(ida).sendKeys("07282019");
+	}
+	
+	public void acionarBuscar() {
+		
+		driver.findElement(buscar).click();
+		
 	}
 
 }
