@@ -4,7 +4,7 @@ import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features = {"src/test/resources/Features"}, glue = {"StepDefinitions"}, tags = {"@Viagem"})
+@CucumberOptions(features = {"src/test/resources/Features"}, glue = {"StepDefinitions"}, tags = {"@CadastrarComSucesso"})
 
 public class Runners {
 
