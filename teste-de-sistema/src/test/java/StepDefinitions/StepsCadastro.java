@@ -27,7 +27,7 @@ public class StepsCadastro {
 
 	@Before
 	public void beforeScenario() {
-		System.setProperty("webdriver.chorme.driver", "C:\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "C:\\chromedriver\\chromedriver.exe");
 		this.driver = new ChromeDriver();
 		driver.manage().window().maximize();
 
@@ -67,13 +67,13 @@ public class StepsCadastro {
 	@Entao("aparecera a mensagem informando que os dados foram salvos com sucesso")
 	public void aparecera_a_mensagem_informando_que_os_dados_foram_salvos_com_sucesso() {
 		String textoElement = driver.findElement(By.cssSelector("#dialogModal > b")).getText();
-        assertEquals("Titulo incorreto", "Os dados foram salvos", textoElement);
+		assertEquals("Titulo incorreto", "Os dados foram salvos", textoElement);
 	}
 
-	// @After
-	// public void afterScenario() {
+	@After
+	public void afterScenario() {
 
-	// this.driver.quit();
-	// }
+		this.driver.quit();
+	}
 
 }

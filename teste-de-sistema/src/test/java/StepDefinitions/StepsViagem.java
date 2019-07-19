@@ -25,7 +25,7 @@ public class StepsViagem {
 
 	@Before
 	public void beforeScenario() {
-		System.setProperty("webdriver.chorme.driver", "C:\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "C:\\chromedriver\\chromedriver.exe");
 		this.driver = new ChromeDriver();
 		driver.manage().window().maximize();
 
@@ -57,7 +57,7 @@ public class StepsViagem {
 
 	@Dado("preencheu todos os campos obrigatorios")
 	public void preencheu_todos_os_campos_obrigatorios() {
-		passagem.ida();
+		passagem.camposObrigatorios();
 	}
 
 	@Quando("clicar em buscar")
