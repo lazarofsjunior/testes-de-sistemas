@@ -25,7 +25,7 @@ public class StepsViagem {
 
 	@Before
 	public void beforeScenario() {
-		System.setProperty("webdriver.chrome.driver", "C:\\chromedriver\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "C:\\chromedriver.exe");
 		this.driver = new ChromeDriver();
 		driver.manage().window().maximize();
 

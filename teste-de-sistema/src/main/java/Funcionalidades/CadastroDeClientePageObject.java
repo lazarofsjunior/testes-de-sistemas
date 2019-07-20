@@ -41,7 +41,7 @@ public class CadastroDeClientePageObject {
 
 	// actions
 
-	public void camposObrigatorios() {
+	public void camposObrigatorios() throws InterruptedException {
 
 		driver.findElement(primeiroNome).sendKeys("Joana");
 		driver.findElement(ultimoNome).sendKeys("Silva");
@@ -51,8 +51,8 @@ public class CadastroDeClientePageObject {
 		WebElement element = wait
 				.until(ExpectedConditions.elementToBeClickable(By.cssSelector("#gender_img > li:nth-child(2) > a")));
 		element.click();
-		driver.findElement(cpf).sendKeys("250.536.470-20");
-		driver.findElement(email).sendKeys("testes5@gmail.com");
+		driver.findElement(cpf).sendKeys("025.023.440-85");
+		driver.findElement(email).sendKeys("tqt@gmail.com");
 		driver.findElement(checkbox).click();
 		driver.findElement(senha).sendKeys("L@zaro78");
 		driver.findElement(Confirmarsenha).sendKeys("L@zaro78");
@@ -66,16 +66,16 @@ public class CadastroDeClientePageObject {
 		driver.findElement(codigoPostal).sendKeys("54140");
 		driver.findElement(codigoPostalNumero).sendKeys("370");
 		driver.findElement(endereco).sendKeys("Rua Santa Isabel");
+		Thread.sleep(1000);
 		driver.findElement(numero).sendKeys("54");
 		driver.findElement(complemento).sendKeys("casa");
 		driver.findElement(bairro).sendKeys("Santo Aleixo");
 		driver.findElement(cidade).sendKeys("Jaboatão dos Guararapes");
-		driver.findElement(estado).sendKeys("PE");
+
 	}
 
-	public void acionarBotaoSalvar() throws InterruptedException {
-		
-		Thread.sleep(3000);
+	public void acionarBotaoSalvar() {
+
 		driver.findElement(botaoSalvar).click();
 
 	}
