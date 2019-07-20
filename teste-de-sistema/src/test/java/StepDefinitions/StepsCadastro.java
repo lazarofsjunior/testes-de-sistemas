@@ -27,7 +27,7 @@ public class StepsCadastro {
 
 	@Before
 	public void beforeScenario() {
-		System.setProperty("webdriver.chorme.driver", "C:\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "C:\\chromedriver\\chromedriver.exe");
 		this.driver = new ChromeDriver();
 		driver.manage().window().maximize();
 

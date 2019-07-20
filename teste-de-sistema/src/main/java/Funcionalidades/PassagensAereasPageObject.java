@@ -21,8 +21,7 @@ public class PassagensAereasPageObject {
 	private By ida = By.xpath("*//div[1]/div/div/div[1]/div[2]/form/div[4]/div/input");
 	private By buscar = By.xpath("*//div[1]/div/div/div[1]/div[2]/form/div[8]/input");
 	private By resultado = By.cssSelector("#results > div.air-results-matrix > ul > li > a");
-	
-	
+
 	// actions
 
 	public void inserirOrigem(String string) {
@@ -50,16 +49,17 @@ public class PassagensAereasPageObject {
 		element.click();
 
 	}
-	
-	public void ida() {
-		
+
+	public void camposObrigatorios() {
+
 		driver.findElement(ida).sendKeys("07282019");
+
 	}
-	
+
 	public void acionarBuscar() {
-		
+
 		driver.findElement(buscar).click();
-		
+
 	}
 
 }
