@@ -27,7 +27,7 @@ public class StepsCadastro {
 
 	@Before
 	public void beforeScenario() {
-		System.setProperty("webdriver.chrome.driver", "C:\\chromedriver\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "C:\\chromedriver.exe");
 		this.driver = new ChromeDriver();
 		driver.manage().window().maximize();
 
@@ -60,7 +60,7 @@ public class StepsCadastro {
 	}
 
 	@Quando("acionar cadastrar")
-	public void acionar_cadastrar() {
+	public void acionar_cadastrar() throws InterruptedException {
 		cadastro.acionarBotaoSalvar();
 	}
 

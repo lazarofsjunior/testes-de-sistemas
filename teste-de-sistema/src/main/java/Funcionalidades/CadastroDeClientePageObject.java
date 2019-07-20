@@ -73,7 +73,9 @@ public class CadastroDeClientePageObject {
 		driver.findElement(estado).sendKeys("PE");
 	}
 
-	public void acionarBotaoSalvar() {
+	public void acionarBotaoSalvar() throws InterruptedException {
+		
+		Thread.sleep(3000);
 		driver.findElement(botaoSalvar).click();
 
 	}
