@@ -29,9 +29,9 @@ public class LoginPageObject {
 
 	public void dadosAcesso() {
 
-		driver.findElement(login).sendKeys("atividade6@gmail.com");
+		driver.findElement(login).sendKeys("atividade");
 		driver.findElement(Senha).sendKeys("L@zaro78");
-		driver.findElement(enviar).click();
+		//driver.findElement(enviar).click();
 
 	}
 

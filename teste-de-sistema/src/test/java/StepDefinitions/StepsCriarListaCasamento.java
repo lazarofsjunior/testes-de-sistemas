@@ -76,10 +76,10 @@ public class StepsCriarListaCasamento {
 	    cadastroLista.exibirListaCriada();
 	}
 	
-	//@After
-	//public void afterScenario() {
+	@After
+	public void afterScenario() {
 
-		//this.driver.quit();
-	//}
+		this.driver.quit();
+	}
 
 }
