@@ -60,6 +60,5 @@ public class ValidarBuscadorPageObject {
 	 public void clicarBuscarParaMensagemAparecer() {
 		 driver.findElement(btnBuscar).click();
 	 }
-	 
-				
+	 			
 }

@@ -45,7 +45,6 @@ public class StepsValidarBuscador {
 		
 	}
 
-
 	@Entao("clicar no botao de buscar e aparecera uma mensagem pedindo para selecionar a origem")
 	public void aparecera_uma_mensagem_pedindo_para_selecionar_a_origem_e_aparecera_uma_mensagem_pedindo_para_selecionar_a_origem() {
 		validarBuscadorPageObject.clicarBuscarParaMensagemAparecer();	    
