@@ -49,5 +49,5 @@ public class StepsValidarBuscador {
 	public void aparecera_uma_mensagem_pedindo_para_selecionar_a_origem_e_aparecera_uma_mensagem_pedindo_para_selecionar_a_origem() {
 		validarBuscadorPageObject.clicarBuscarParaMensagemAparecer();	    
 	}
-	
+
 }
