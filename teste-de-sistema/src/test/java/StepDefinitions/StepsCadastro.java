@@ -65,7 +65,7 @@ public class StepsCadastro {
 	@Quando("acionar cadastrar")
 	public void acionar_cadastrar() throws InterruptedException {
 		
-		Thread.sleep(2000);
+		Thread.sleep(7000);
 		cadastro.acionarBotaoSalvar();
 	}
 
@@ -77,10 +77,10 @@ public class StepsCadastro {
 		assertEquals("Titulo incorreto", "Os dados foram salvos", textoElement);
 	}
 
-	//@After
-	//public void afterScenario() {
+	@After
+	public void afterScenario() {
 
-		//this.driver.quit();
-	//}
+		this.driver.quit();
+	}
 
 }

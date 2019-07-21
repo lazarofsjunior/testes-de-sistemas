@@ -51,8 +51,8 @@ public class CadastroDeClientePageObject {
 		WebElement element = wait
 				.until(ExpectedConditions.elementToBeClickable(By.cssSelector("#gender_img > li:nth-child(2) > a")));
 		element.click();
-		driver.findElement(cpf).sendKeys("025.023.440-85");
-		driver.findElement(email).sendKeys("tqt@gmail.com");
+		driver.findElement(cpf).sendKeys("510.740.260-71");
+		driver.findElement(email).sendKeys("atividade6@gmail.com");
 		driver.findElement(checkbox).click();
 		driver.findElement(senha).sendKeys("L@zaro78");
 		driver.findElement(Confirmarsenha).sendKeys("L@zaro78");
@@ -70,7 +70,7 @@ public class CadastroDeClientePageObject {
 		driver.findElement(numero).sendKeys("54");
 		driver.findElement(complemento).sendKeys("casa");
 		driver.findElement(bairro).sendKeys("Santo Aleixo");
-		driver.findElement(cidade).sendKeys("Jaboatão dos Guararapes");
+		//driver.findElement(cidade).sendKeys("Jaboatão dos Guararapes");
 
 	}
 

@@ -5,10 +5,10 @@ Funcionalidade: Alterar Cadastro
 @AlterarCadastroComSucesso
 Cenario: Alterar Cadastro Cliente
 
-Dado que o usuario ja tenha cadastro no site do cvc  
-E clica em login e minhas viagens
-E clica Enviar apos preencher login/senha
+Dado que o usuario esteja no site do cvc  
+E clica em login e minha viagens
+E preenche login e  senha
 E clica para alterar seus dados cadastrais
-E modifica o campo Bairro
+E altera o campo bairro
 Quando acionar alterar cadastro
-Entao o campo sera alterado com sucesso.
+Entao o campo sera alterado com sucesso

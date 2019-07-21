@@ -28,11 +28,20 @@ public class HeaderPageObject {
 	public void acessarAtendimento() {
 
 		driver.findElement(atendimento).click();
+
+		for (String winHandle : driver.getWindowHandles()) {
+			driver.switchTo().window(winHandle);
+		}
+
 	}
 
 	public void acessarLogin() {
 
 		driver.findElement(login).click();
+		
+		for (String winHandle : driver.getWindowHandles()) {
+			driver.switchTo().window(winHandle);
+		}
 	}
 
 	public void acessarLojas() {
