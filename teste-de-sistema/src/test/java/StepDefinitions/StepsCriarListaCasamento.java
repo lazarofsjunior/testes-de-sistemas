@@ -52,6 +52,11 @@ public class StepsCriarListaCasamento {
 	public void preenche_login_senha() {
 	    login.dadosAcesso();
 	}
+	
+	@Dado("clica enviar")
+	public void clica_enviar() {
+	    login.acionarEnviar();
+	}
 
 	@Dado("clica em minha lista de casamento")
 	public void clica_em_minha_lista_de_casamento() {
