@@ -51,8 +51,8 @@ public class CadastroDeClientePageObject {
 		WebElement element = wait
 				.until(ExpectedConditions.elementToBeClickable(By.cssSelector("#gender_img > li:nth-child(2) > a")));
 		element.click();
-		driver.findElement(cpf).sendKeys("510.740.260-71");
-		driver.findElement(email).sendKeys("atividade6@gmail.com");
+		driver.findElement(cpf).sendKeys("097.619.460-02");
+		driver.findElement(email).sendKeys("projetotestes@gmail.com");
 		driver.findElement(checkbox).click();
 		driver.findElement(senha).sendKeys("L@zaro78");
 		driver.findElement(Confirmarsenha).sendKeys("L@zaro78");

@@ -53,6 +53,11 @@ public class StepsAreaDoClienteAlterarDados {
 	   login.dadosAcesso();
 	   
 	}
+	
+	@Dado("aciona enviar")
+	public void aciona_enviar() {
+	    login.acionarEnviar();
+	}
 
 	@Dado("clica para alterar seus dados cadastrais")
 	public void clica_para_alterar_seus_dados_cadastrais() {
@@ -70,9 +75,11 @@ public class StepsAreaDoClienteAlterarDados {
 	}
 
 	@Entao("o campo sera alterado com sucesso")
-	public void o_campo_sera_alterado_com_sucesso() {
-		String textoElement = driver.findElement(By.id("Neighborhood")).getText();
-		assertEquals("Titulo incorreto", "Santo Aleixo", textoElement);
+	public void o_campo_sera_alterado_com_sucesso() throws InterruptedException {
+		
+		Thread.sleep(4000);
+		String textoElement = driver.findElement(By.xpath("//*[@id=\"menuHomeLogged\"]/div/form/h2")).getText();
+		assertEquals("Titulo incorreto", "Meu cadastro", textoElement);
 	}
 	
 	@After

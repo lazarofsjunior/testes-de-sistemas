@@ -67,7 +67,7 @@ private WebDriver driver;
 	@Entao("as informacoes do casamento sera exibido com sucesso")
 	public void as_informacoes_do_casamento_sera_exibido_com_sucesso() throws InterruptedException {
 		
-		Thread.sleep(2000);
+		Thread.sleep(8000);
 	    
 		String textoElement = driver.findElement(By.cssSelector("#contentGiftListResultSearch > ul > li > ul > li:nth-child(2) > h1")).getText();
 		assertEquals("Titulo incorreto", "INFORMAÇÕES DO CASAMENTO", textoElement);

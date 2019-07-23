@@ -50,7 +50,7 @@ public class StepsDadosInvalidos {
 
 	@Dado("preencheu login e senha invalidos")
 	public void preencheu_login_e_senha_invalidos() {
-		login.dadosAcesso();
+		login.dadosInvalidos();
 	}
 
 	@Quando("acionar enviar")
@@ -59,7 +59,9 @@ public class StepsDadosInvalidos {
 	}
 
 	@Entao("aparecera a mensagem informando que o e invalido")
-	public void aparecera_a_mensagem_informando_que_o_e_invalido() {
+	public void aparecera_a_mensagem_informando_que_o_e_invalido() throws InterruptedException {
+		
+		Thread.sleep(7000);
 
 		String textoElement = driver.findElement(By.xpath("//*[@id=\"dialogModal\"]/div")).getText();
 		assertEquals("Titulo incorreto", "Usuário não encontrado!", textoElement);
