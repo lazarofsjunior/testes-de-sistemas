@@ -1,0 +1,16 @@
+Grupo CVC - Comentários
+
+- Os page objects estão dentro da pasta main, deveriam estar dentro da pasta test.
+- A pasta dos page objects se chama "funcionalidades", o que pode confundir as pessoas, visto que page objects não são funcionalidades. Os .feature são as funcionalidades.
+- Os page objects foram nomeados da mesma forma que os .features, o que não faz sentido, pois os page objects devem ser o mapeamento de páginas ou áreas da aplicação, permitindo assim o reuso desse page object em diferentes testes.
+- Algumas frases dos cenários foram um pouco difícies de entender. Exemplo: Entao aparecera a mensagem informando que o e invalido. Além disso, as frases estão sem pontuação.
+- Alguns nomes de funcionalidades na verdade não são funcionalidades e sim validações, exemplo: Validar a mensagem de retorno apos inclusao dos dados de acesso invalidos.
+- Usaram a palavra "validar", mas poderiam não ter usado, assim o nome do cenário se aproximaria mais de um comportamento (BDD).
+
+- Alguns testes passavam em algumas execuções e falhavam em outras.
+- Algumas classes não faziam parte do projeto. Exemplo: AppTest
+- O caminho para o chromedriver era absoluto e não relativo. Por isso eu tive que mudar o caminho para executar os testes.
+- Criaram um @before e um @after para cada classe de stepDefinitions. Por isso os testes estavam abrindo diversas instâncias do brwoser. Neste caso só precisariam colocar um único @before e um único @after.
+- Existem algumas steps completamente comentadas ou com a implementação comentada.
+- Existem métodos não utilizados nos testes.
+- Usaram thread.sleep
